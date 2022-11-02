@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script defer src="app.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="container">
+			<section id="1" style="background-color: orange;">
+				<div class="content hidden">
+					<h1>ciao</h1>
+					<p>daje</p>
+
+				</div>
+				<a class="next" href="#2">-></a>
+			</section>
+			<section id="2" style="background-color: green;">
+				<a class="previous" href="#1">
+					<- </a>
+						<div class="content hidden">
+							<h1>Ok</h1>
+							<p>ci siamo</p>
+						</div>
+						<a class="next" href="#3">-></a>
+			</section>
+			<section class="hidden" id="3" style="background-color: blue;">
+				<a class="previous" href="#2">
+					<- </a>
+						<div class="content hidden">
+							<h1>Sezione 3</h1>
+							<p>ci siamo</p>
+						</div>
+			</section>
+		</div>
+	</div>
+
+</body>
+
+</html>
