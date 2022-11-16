@@ -25,9 +25,15 @@ section {
   justify-self: center;
 }
 section {
+  background: black;
   background-image: radial-gradient(ellipse at top right, #79ff44, transparent);
-  filter: drop-shadow(1);
 }
+body {
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+}
+
 .previous {
   place-self: start;
   position: absolute;
