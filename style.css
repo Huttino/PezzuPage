@@ -16,7 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: local;
-  background-position: left;
+  background-position: bottom left;
   will-change: scroll-position;
 }
 h1 {
