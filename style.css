@@ -12,6 +12,11 @@
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   display: flex;
+  background-image: url("public/Background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: bottom;
 }
 section {
   position: relative;
@@ -19,20 +24,29 @@ section {
   min-width: 100vw;
   display: grid;
   scroll-snap-align: center;
+  color: white;
 }
 .content {
-  align-self: center;
-  justify-self: center;
+  text-align: start;
+  font-size: 5vh;
+  padding-top: 20%;
+  padding-left: 4%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
-section {
+.aboutme {
   background: black;
-  background-image: radial-gradient(ellipse at top right, #79ff44, transparent);
 }
-body {
-  background-size: cover;
-  background-position: center;
-  background-clip: content-box;
-  background-repeat: no-repeat;
+
+.writing {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  right: 5vw;
+}
+.sectionblurred {
+  background: rgb(0, 0, 0, 0.7);
 }
 
 .previous {
@@ -40,31 +54,22 @@ body {
   position: absolute;
   top: 50%;
   left: 2vw;
-  transition: 2s;
+  z-index: 1;
 }
 .next {
   place-self: end;
   position: absolute;
   top: 50%;
   right: 2vw;
-  transition: 2s;
+  z-index: 1;
 }
 .hidden {
   opacity: 0;
   filter: blur(20px);
   transition-delay: 300ms;
-  transition: 800ms;
+  transition: 1000ms;
 }
 .show {
   opacity: 1;
   filter: blur(0);
-  transition-delay: 400ms;
-  transition: 800ms;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-.previous:hover,
-.next:hover {
-  transform: scale(2);
 }
